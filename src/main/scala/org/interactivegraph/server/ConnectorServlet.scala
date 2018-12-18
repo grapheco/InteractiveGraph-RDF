@@ -65,7 +65,7 @@ class ConnectorServlet extends HttpServlet with Logging {
 
   override def doOptions(req: HttpServletRequest, resp: HttpServletResponse) = {
     super.doOptions(req, resp)
-    resp.setHeader("Access-Contro-Allow-Headers", "Content-Type")
+    resp.setHeader("Access-Control-Allow-Headers", "Content-Type")
   }
 
   val _executorCache = mutable.Map[String, CommandExecutor]()

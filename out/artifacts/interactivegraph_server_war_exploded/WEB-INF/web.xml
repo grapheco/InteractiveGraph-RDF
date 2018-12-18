@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>connector1</servlet-name>
+        <servlet-class>org.interactivegraph.server.ConnectorServlet</servlet-class>
+        <init-param>
+            <param-name>configFile</param-name>
+            <param-value>WEB-INF/conf1.properties</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>connector1</servlet-name>
+        <url-pattern>/connector-jena</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>connector2</servlet-name>
+        <servlet-class>org.interactivegraph.server.ConnectorServlet</servlet-class>
+        <init-param>
+            <param-name>configFile</param-name>
+            <param-value>WEB-INF/conf2.properties</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>connector2</servlet-name>
+        <url-pattern>/connector-tdb</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>connector3</servlet-name>
+        <servlet-class>org.interactivegraph.server.ConnectorServlet</servlet-class>
+        <init-param>
+            <param-name>configFile</param-name>
+            <param-value>WEB-INF/conf3.properties</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>connector3</servlet-name>
+        <url-pattern>/connector-n3</url-pattern>
+    </servlet-mapping>
+
+</web-app>

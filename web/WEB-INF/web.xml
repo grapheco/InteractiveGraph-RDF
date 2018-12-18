@@ -39,7 +39,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>connector3</servlet-name>
-        <url-pattern>/connector-gson</url-pattern>
+        <url-pattern>/connector-n3</url-pattern>
     </servlet-mapping>
 
 </web-app>

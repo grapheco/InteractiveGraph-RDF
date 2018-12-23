@@ -29,4 +29,10 @@ object Wrapper{
     }
     edgeMap.toMap
   }
+
+  //TO DO
+  def wrapPath(nodes:Array[Map[String,_]],edges:Array[Map[String,_]]): Map[String, _] ={
+    Map("nodes" -> nodes,"edges" -> edges)
+    }
+
 }

@@ -1,4 +1,4 @@
-package org.interactivegraph.server
+package org.grapheco.interactivegraph.server
 
 import java.util.{Map => JMap}
 

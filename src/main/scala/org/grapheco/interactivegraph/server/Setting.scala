@@ -1,4 +1,4 @@
-package org.interactivegraph.server
+package org.grapheco.interactivegraph.server
 
 class Setting {
   var _executors: CommandExecutorRegistry = _;

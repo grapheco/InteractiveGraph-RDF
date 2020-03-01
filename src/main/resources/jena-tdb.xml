@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <import resource="jena-base.xml"/>
-    <bean class="org.interactivegraph.server.jena.TDBService">
+    <bean class="org.grapheco.interactivegraph.server.jena.TDBService">
         <property name="directory" value="${tdb.dataDir}"/>
         <property name="modelName" value="${tdb.modelName}"/>
     </bean>

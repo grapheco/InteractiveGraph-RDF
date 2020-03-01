@@ -1,10 +1,11 @@
-package org.interactivegraph.server.jena
+package org.grapheco.interactivegraph.server.jena
 
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.atomic.AtomicInteger
 
 import com.google.gson.JsonObject
-import org.interactivegraph.server.util.Wrapper
+import org.grapheco.interactivegraph.server.{CommandExecutor, JsonCommandExecutor, Setting}
+import org.grapheco.interactivegraph.server.util.Wrapper
 import org.interactivegraph.server.{CommandExecutor, JsonCommandExecutor, Setting}
 
 import scala.collection.mutable.ArrayBuffer

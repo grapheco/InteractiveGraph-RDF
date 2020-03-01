@@ -1,8 +1,9 @@
-package org.interactivegraph.server.jena
+package org.grapheco.interactivegraph.server.jena
+
 import org.apache.jena.query.{Dataset, QueryExecutionFactory, QueryFactory, ResultSet}
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.tdb.TDBFactory
-import org.interactivegraph.server.util.Logging
+import org.grapheco.interactivegraph.server.util.Logging
 import org.springframework.beans.factory.InitializingBean
 
 import scala.collection.mutable.ArrayBuffer

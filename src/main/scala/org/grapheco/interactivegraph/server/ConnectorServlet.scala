@@ -1,4 +1,4 @@
-package org.interactivegraph.server
+package org.grapheco.interactivegraph.server
 
 import java.io.{File, FileInputStream, InputStreamReader}
 import java.net.URLDecoder
@@ -7,7 +7,8 @@ import java.util.Properties
 import javax.servlet.ServletConfig
 import javax.servlet.http.{HttpServlet, HttpServletRequest, HttpServletResponse}
 import org.apache.commons.io.IOUtils
-import org.interactivegraph.server.util.{JsonUtils, Logging, ServletContextUtils}
+import org.grapheco.interactivegraph.server.util.{JsonUtils, Logging, ServletContextUtils}
+import org.interactivegraph.server.util.{JsonUtils, ServletContextUtils}
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer
 import org.springframework.context.support.FileSystemXmlApplicationContext
 

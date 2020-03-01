@@ -5,13 +5,13 @@
     <context:annotation-config/>
     <context:component-scan base-package="org.interactivegraph.server"/>
 
-    <bean class="org.interactivegraph.server.jena.JenaSetting">
+    <bean class="org.grapheco.interactivegraph.server.jena.JenaSetting">
         <property name="backendType" value="${backendType}"/>
         <property name="regexpSearchFields" value="${jena.regexpSearchFields}"/>
         <property name="strictSearchFields" value="${jena.strictSearchFields}"/>
         <property name="nodeCategories" value="${jena.nodeCategories}"/>
         <property name="graphMetaDB">
-            <bean class="org.interactivegraph.server.jena.JenaGraphMetaDBInMemory">
+            <bean class="org.grapheco.interactivegraph.server.jena.JenaGraphMetaDBInMemory">
                 <property name="visNodeProperties">
                     <map>
                         <entry key="label" value="${visNodeProperty.label}"/>
@@ -23,7 +23,7 @@
             </bean>
         </property>
         <property name="commandExecutorRegistry">
-            <bean class="org.interactivegraph.server.DefaultCommandExecutorRegistry">
+            <bean class="org.grapheco.interactivegraph.server.DefaultCommandExecutorRegistry">
                 <property name="classNamePattern" value="org.interactivegraph.server.jena._"/>
                 <property name="extraCommands">
                     <map>

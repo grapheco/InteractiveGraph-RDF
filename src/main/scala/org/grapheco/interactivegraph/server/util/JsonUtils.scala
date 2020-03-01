@@ -1,4 +1,4 @@
-package org.interactivegraph.server.util
+package org.grapheco.interactivegraph.server.util
 
 import com.google.gson._
 

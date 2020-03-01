@@ -1,4 +1,4 @@
-package org.interactivegraph.server.util
+package org.grapheco.interactivegraph.server.util
 
 import java.io.{File, StringWriter}
 import java.util.Properties

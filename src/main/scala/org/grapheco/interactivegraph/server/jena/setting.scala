@@ -1,9 +1,10 @@
-package org.interactivegraph.server.jena
+package org.grapheco.interactivegraph.server.jena
 
 import java.util.{Map => JMap}
 
+import org.grapheco.interactivegraph.server.Setting
+import org.grapheco.interactivegraph.server.util.VelocityUtils
 import org.interactivegraph.server.Setting
-import org.interactivegraph.server.util.VelocityUtils
 import org.springframework.beans.factory.InitializingBean
 import org.springframework.beans.factory.annotation.Autowired
 

@@ -1,9 +1,9 @@
-package org.interactivegraph.server
+package org.grapheco.interactivegraph.server
 
 import java.io.OutputStream
 
 import com.google.gson.JsonObject
-import org.interactivegraph.server.util.JsonUtils
+import org.grapheco.interactivegraph.server.util.JsonUtils
 
 
 class UnrecognizedCommandException(command: String)
